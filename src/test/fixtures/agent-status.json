@@ -1,0 +1,1 @@
+{"mode":"llm","llm_enabled":true,"api_key_configured":true,"main_model":"accounts/fireworks/models/glm-5p3-flash","subagent_model":"accounts/fireworks/models/deepseek-v4p1-flash","reasoning_effort":"low","timeout_s":60.0,"cooling_model":{"version":"crm-20261013T120438Z-1443761922fc8cc7","label":"forecasting_baseline"},"recommendation_only":true}

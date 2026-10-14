@@ -1,0 +1,54 @@
+{
+  "name": "thermacore-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3000",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "screenshot": "node e2e/screenshot.mjs",
+    "test:live": "vitest run -c vitest.live.config.ts"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.1",
+    "@tanstack/react-query": "5.104.2",
+    "lucide-react": "1.57.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "recharts": "3.10.1",
+    "server-only": "^0.0.1",
+    "three": "0.186.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.4.0",
+    "jsdom": "^30.1.2",
+    "postcss": "^8.5.30",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vitest": "5.0.4"
+  }
+}

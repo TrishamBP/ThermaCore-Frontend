@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(pnpm typecheck)",
+      "Bash(pnpm lint)",
+      "Bash(pnpm test)",
+      "Bash(curl -s http://127.0.0.1:8000/api/v1/health)",
+      "Bash(curl -s http://127.0.0.1:8000/openapi.json)"
+    ],
+    "ask": [
+      "Bash(pnpm add:*)",
+      "Bash(pnpm remove:*)",
+      "Bash(npm install:*)",
+      "Bash(curl -X POST:*)",
+      "Bash(curl -s -X POST:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(rm -rf:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.*.local)",
+      "Read(../data_engineering/.env)",
+      "Edit(../data_engineering/**)"
+    ]
+  }
+}
